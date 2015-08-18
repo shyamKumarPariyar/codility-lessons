@@ -1,5 +1,4 @@
-# Lesson 1
-## Time Complexity
+## Lesson 1 (Time Complexity)
 
 ### Tasks
 - [x] [TapeEquilibrium](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson01/TapeEquilibrium.md)
