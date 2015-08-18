@@ -1,6 +1,6 @@
-# TapeEquilibrium Problem
+## TapeEquilibrium Problem
 
-## The Problem
+### The Problem
 A non-empty zero-indexed array A consisting of N integers is given. Array A represents numbers on a tape.
 
 Any integer P, such that 0 < P < N, splits this tape into two non-empty parts: A[0], A[1], ..., A[P − 1] and A[P], A[P + 1], ..., A[N − 1].
@@ -50,7 +50,7 @@ the function should return 1, as explained above.
 
 Elements of input arrays can be modified.
 
-## Solution Analysis on Codility
+### Solution Analysis on Codility
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
