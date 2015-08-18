@@ -1,4 +1,4 @@
-## Codility Lessions (Solution using PHPSpec)
+# Codility Lessons
 
 #### [Lesson 01 - Time Complexity](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson01/)
 Use of time complexity makes it easy to estimate the running time of a program. Performing
