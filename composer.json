@@ -1,4 +1,8 @@
 {
+    "name": "samiulhoque/codility-lessons",
+    "description": "Codility lessons solution by PHP",
+    "keywords": ["codility", "learning", "php"],
+    "license": "MIT",
     "require": {
         "phpspec/phpspec": "~2.0"
     },
