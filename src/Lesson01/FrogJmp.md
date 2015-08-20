@@ -1,4 +1,4 @@
-## FrogJmp Problem
+## FrogJmp
 
 ### The Problem
 

@@ -1,4 +1,4 @@
-## PermMissingElem Problem
+## PermMissingElem
 
 ### The Problem
 

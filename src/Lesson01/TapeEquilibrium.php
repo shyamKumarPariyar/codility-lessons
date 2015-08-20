@@ -4,7 +4,7 @@ namespace Lesson01;
 
 class TapeEquilibrium
 {
-    public function solution($A)
+    function solution($A)
     {
         $count = count($A);
         $left = 0;
