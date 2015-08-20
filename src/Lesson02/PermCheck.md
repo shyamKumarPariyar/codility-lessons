@@ -60,6 +60,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(N * log(N)) or O(N)**
+* Detected time complexity: **O(N) or O(N * log(N))**
 
-https://codility.com/demo/results/demo2MJ59R-58R/
+https://codility.com/demo/results/demo3QFYDP-NF3/

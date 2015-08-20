@@ -11,4 +11,14 @@ class PermCheckSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Lesson02\PermCheck');
     }
+
+    function it_should_return_1_for_4_1_3_2()
+    {
+        $this->solution([4, 1, 3, 2])->shouldReturn(1);
+    }
+
+    function it_should_return_0_for_4_1_3()
+    {
+        $this->solution([4, 1, 3])->shouldReturn(0);
+    }
 }
