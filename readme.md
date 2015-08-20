@@ -6,3 +6,5 @@
 #### [Lesson 01 - Time Complexity](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson01/)
 
 #### [Lesson 02 - Counting Elements](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson02/)
+
+#### [Lesson 03 - Prefix Sums](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson03/)
