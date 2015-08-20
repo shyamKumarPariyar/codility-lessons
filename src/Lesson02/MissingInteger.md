@@ -35,4 +35,4 @@ Elements of input arrays can be modified.
 * Task score: 100%
 * Detected time complexity: **O(N)**
 
-https://codility.com/demo/results/demo9NT4UA-E9B/
+https://codility.com/demo/results/demoKKN4KA-K4P/
