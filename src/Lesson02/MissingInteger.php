@@ -20,15 +20,16 @@ class MissingInteger
             }
 
             $sortedUniques = array_values($uniquePositives);
-
-            for ($i = 0; $i < count($sortedUniques); $i++) {
+            $sortedUniquesCount = count($sortedUniques);
+            
+            for ($i = 0; $i < $sortedUniquesCount; $i++) {
                 if ($sortedUniques[$i] > ($i + 1)) {
                     $missingNumber = $i + 1;
                     break;
                 }
             }
 
-            if ($i == count($sortedUniques)) {
+            if ($i == $sortedUniquesCount) {
                 $missingNumber = $i + 1;
             }
         }
