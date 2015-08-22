@@ -1,4 +1,4 @@
-## Triangle
+## Distinct
 
 ### The Problem
 
