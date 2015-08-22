@@ -30,6 +30,6 @@ For example, given S = "(()(())())", the function should return 1 and given S = 
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(N)**
+* Detected time complexity: __O(N)__
 
 https://codility.com/demo/results/demoNAGXHC-UW8/

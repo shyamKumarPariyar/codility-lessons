@@ -44,6 +44,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(N*log(N)) or O(N)**
+* Detected time complexity: __O(N*log(N)) or O(N)__
 
 https://codility.com/demo/results/demoCCCCP2-397/

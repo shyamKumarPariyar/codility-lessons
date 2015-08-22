@@ -33,6 +33,6 @@ the function should return 3, because the frog will be positioned as follows:
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(1)**
+* Detected time complexity: __O(1)__
 
 https://codility.com/demo/results/demo554K9T-ECP/

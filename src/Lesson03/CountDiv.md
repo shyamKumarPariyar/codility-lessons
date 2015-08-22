@@ -23,6 +23,6 @@ For example, for A = 6, B = 11 and K = 2, your function should return 3, because
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(1)**
+* Detected time complexity: __O(1)__
 
 https://codility.com/demo/results/demoS5UD54-U83/
