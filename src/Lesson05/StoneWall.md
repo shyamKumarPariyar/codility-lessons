@@ -2,43 +2,32 @@
 
 ### The Problem
 
-A zero-indexed array A consisting of N integers is given. A triplet (P, Q, R) is triangular if 0 ≤ P < Q < R < N and:
+You are going to build a stone wall. The wall should be straight and N meters long, and its thickness should be constant; however, it should have different heights in different places. The height of the wall is specified by a zero-indexed array H of N positive integers. H[I] is the height of the wall from I to I+1 meters to the right of its left end. In particular, H[0] is the height of the wall's left end and H[N−1] is the height of the wall's right end.
 
-* A[P] + A[Q] > A[R],
-* A[Q] + A[R] > A[P],
-* A[R] + A[P] > A[Q].
-
-For example, consider array A such that:
-```php
-  A[0] = 10    A[1] = 2    A[2] = 5
-  A[3] = 1     A[4] = 8    A[5] = 20
-```
-Triplet (0, 2, 4) is triangular.
+The wall should be built of cuboid stone blocks (that is, all sides of such blocks are rectangular). Your task is to compute the minimum number of blocks needed to build the wall.
 
 Write a function:
 ```php
-function solution($A);
+function solution($H);
 ```
-that, given a zero-indexed array A consisting of N integers, returns 1 if there exists a triangular triplet for this array and returns 0 otherwise.
+that, given a zero-indexed array H of N positive integers specifying the height of the wall, returns the minimum number of blocks needed to build it.
 
-For example, given array A such that:
+For example, given array H containing N = 9 integers:
 ```php
-  A[0] = 10    A[1] = 2    A[2] = 5
-  A[3] = 1     A[4] = 8    A[5] = 20
+  H[0] = 8    H[1] = 8    H[2] = 5
+  H[3] = 7    H[4] = 9    H[5] = 8
+  H[6] = 7    H[7] = 4    H[8] = 8
 ```
-the function should return 1, as explained above. Given array A such that:
-```php
-  A[0] = 10    A[1] = 50    A[2] = 5
-  A[3] = 1
-```
-the function should return 0.
+the function should return 7. The figure shows one possible arrangement of seven blocks.
+
+![StoneWall](StoneWall.png)
 
 ##### Assume that:
-* N is an integer within the range [0..100,000];
-* each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
+* N is an integer within the range [1..100,000];
+* each element of array H is an integer within the range [1..1,000,000,000].
 
 ##### Complexity:
-* expected worst-case time complexity is O(N*log(N));
+* expected worst-case time complexity is O(N);
 * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 Elements of input arrays can be modified.
@@ -47,6 +36,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: **O(N*log(N))**
+* Detected time complexity: **O(N)**
 
-https://codility.com/demo/results/demo5USK49-RQ6/
+https://codility.com/demo/results/demo9C8AYN-H7K/
