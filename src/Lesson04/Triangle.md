@@ -1,4 +1,4 @@
-## GenomicRangeQuery
+## Triangle
 
 ### The Problem
 
