@@ -8,3 +8,5 @@
 #### [Lesson 02 - Counting Elements](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson02/)
 
 #### [Lesson 03 - Prefix Sums](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson03/)
+
+#### [Lesson 04 - Sorting](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson04/)
