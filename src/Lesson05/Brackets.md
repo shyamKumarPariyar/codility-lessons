@@ -30,6 +30,6 @@ For example, given S = "{[()()]}", the function should return 1 and given S = "(
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N*log(N))__
+* Detected time complexity: __O(N)__
 
-https://codility.com/demo/results/demo5USK49-RQ6/
+https://codility.com/demo/results/demoK8V7RY-757/
