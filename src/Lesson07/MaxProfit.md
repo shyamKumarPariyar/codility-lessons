@@ -1,34 +1,40 @@
-## Dominator
+## MaxProfit
 
 ### The Problem
 
-A zero-indexed array A consisting of N integers is given. The dominator of array A is the value that occurs in more than half of the elements of A.
+A zero-indexed array A consisting of N integers is given. It contains daily prices of a stock share for a period of N consecutive days. If a single share was bought on day P and sold on day Q, where 0 ≤ P ≤ Q < N, then the profit of such transaction is equal to A[Q] − A[P], provided that A[Q] ≥ A[P]. Otherwise, the transaction brings loss of A[P] − A[Q].
 
-For example, consider array A such that
+For example, consider the following array A consisting of six elements such that:
 ```php
-A[0] = 3    A[1] = 4    A[2] =  3
-A[3] = 2    A[4] = 3    A[5] = -1
-A[6] = 3    A[7] = 3
+  A[0] = 23171
+  A[1] = 21011
+  A[2] = 21123
+  A[3] = 21366
+  A[4] = 21013
+  A[5] = 21367
 ```
-The dominator of A is 3 because it occurs in 5 out of 8 elements of A (namely in those with indices 0, 2, 4, 6 and 7) and 5 is more than a half of 8.
+If a share was bought on day 0 and sold on day 2, a loss of 2048 would occur because A[2] − A[0] = 21123 − 23171 = −2048. If a share was bought on day 4 and sold on day 5, a profit of 354 would occur because A[5] − A[4] = 21367 − 21013 = 354. Maximum possible profit was 356. It would occur if a share was bought on day 1 and sold on day 5.
 
-Write a function
+Write a function,
 ```php
 function solution($A);
 ```
-that, given a zero-indexed array A consisting of N integers, returns index of any element of array A in which the dominator of A occurs. The function should return −1 if array A does not have a dominator.
+that, given a zero-indexed array A consisting of N integers containing daily prices of a stock share for a period of N consecutive days, returns the maximum possible profit from one transaction during this period. The function should return 0 if it was impossible to gain any profit.
+
+For example, given array A consisting of six elements such that:
+```php
+  A[0] = 23171
+  A[1] = 21011
+  A[2] = 21123
+  A[3] = 21366
+  A[4] = 21013
+  A[5] = 21367
+```
+the function should return 356, as explained above.
 
 ##### Assume that:
-* N is an integer within the range [0..100,000];
-* each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
-
-For example, given array A such that
-```php
-A[0] = 3    A[1] = 4    A[2] =  3
-A[3] = 2    A[4] = 3    A[5] = -1
-A[6] = 3    A[7] = 3
-```
-the function may return 0, 2, 4, 6 or 7, as explained above.
+* N is an integer within the range [0..400,000];
+* each element of array A is an integer within the range [0..200,000].
 
 ##### Complexity:
 * expected worst-case time complexity is O(N);
@@ -40,6 +46,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N) or O(N*log(N))__
+* Detected time complexity: __O(N)__
 
-https://codility.com/demo/results/demo5TQXHV-U3B/
+https://codility.com/demo/results/demoUWF8FJ-ZTG/
