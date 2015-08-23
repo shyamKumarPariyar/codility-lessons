@@ -23,7 +23,7 @@ class Fish
                     }
                     $v = array_pop($stack);
                 }
-                if ($v != null && $v[0] != $size) {
+                if ($v !== null && $v[0] !== $size) {
                     array_push($stack, [$v[0], $v[1]]);
                 }
                 array_push($stack, [$size, $direction]);
