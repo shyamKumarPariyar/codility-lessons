@@ -12,3 +12,5 @@
 #### [Lesson 04 - Sorting](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson04/)
 
 #### [Lesson 05 - Stacks and Queues](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson05/)
+
+#### [Lesson 06 - Leader](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson06/)

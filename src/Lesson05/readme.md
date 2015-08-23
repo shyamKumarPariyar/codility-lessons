@@ -1,4 +1,4 @@
-## Lesson 4 (Stacks and Queues) in [Codility](https://codility.com/programmers/lessons/5)
+## Lesson 5 (Stacks and Queues) in [Codility](https://codility.com/programmers/lessons/5)
 
 ### Tasks
 
