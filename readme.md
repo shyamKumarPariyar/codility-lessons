@@ -16,3 +16,5 @@
 #### [Lesson 06 - Leader](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson06/)
 
 #### [Lesson 07 - Maximum Slice Problem](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson07/)
+
+#### [Lesson 08 - Prime and Composite Numbers](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson08/)
