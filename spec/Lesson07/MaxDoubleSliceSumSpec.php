@@ -11,4 +11,9 @@ class MaxDoubleSliceSumSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Lesson07\MaxDoubleSliceSum');
     }
+
+    function it_should_return_17_for_326m145m12()
+    {
+        $this->solution([3, 2, 6, -1, 4, 5, -1, 2])->shouldReturn(17);
+    }
 }

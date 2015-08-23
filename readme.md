@@ -14,3 +14,5 @@
 #### [Lesson 05 - Stacks and Queues](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson05/)
 
 #### [Lesson 06 - Leader](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson06/)
+
+#### [Lesson 07 - Maximum Slice Problem](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson07/)
