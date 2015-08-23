@@ -1,38 +1,35 @@
-## Dominator
+## MaxSliceSum
 
 ### The Problem
 
-A zero-indexed array A consisting of N integers is given. The dominator of array A is the value that occurs in more than half of the elements of A.
+A non-empty zero-indexed array A consisting of N integers is given. A pair of integers (P, Q), such that 0 ≤ P ≤ Q < N, is called a slice of array A. The sum of a slice (P, Q) is the total of A[P] + A[P+1] + ... + A[Q].
 
-For example, consider array A such that
+Write a function:
 ```php
-A[0] = 3    A[1] = 4    A[2] =  3
-A[3] = 2    A[4] = 3    A[5] = -1
-A[6] = 3    A[7] = 3
+    function solution($A);
 ```
-The dominator of A is 3 because it occurs in 5 out of 8 elements of A (namely in those with indices 0, 2, 4, 6 and 7) and 5 is more than a half of 8.
+that, given an array A consisting of N integers, returns the maximum sum of any slice of A.
 
-Write a function
+For example, given array A such that:
 ```php
-function solution($A);
+    A[0] = 3    A[1] = 2    A[2] = -6
+    A[3] = 4    A[4] = 0
 ```
-that, given a zero-indexed array A consisting of N integers, returns index of any element of array A in which the dominator of A occurs. The function should return −1 if array A does not have a dominator.
+the function should return 5 because:
+
+* (3, 4) is a slice of A that has sum 4,
+* (2, 2) is a slice of A that has sum −6,
+* (0, 1) is a slice of A that has sum 5,
+* no other slice of A has sum greater than (0, 1).
 
 ##### Assume that:
-* N is an integer within the range [0..100,000];
-* each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
-
-For example, given array A such that
-```php
-A[0] = 3    A[1] = 4    A[2] =  3
-A[3] = 2    A[4] = 3    A[5] = -1
-A[6] = 3    A[7] = 3
-```
-the function may return 0, 2, 4, 6 or 7, as explained above.
+* N is an integer within the range [1..1,000,000];
+* each element of array A is an integer within the range [−1,000,000..1,000,000];
+* the result will be an integer within the range [−2,147,483,648..2,147,483,647].
 
 ##### Complexity:
 * expected worst-case time complexity is O(N);
-* expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+* expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 Elements of input arrays can be modified.
 
@@ -40,6 +37,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N) or O(N*log(N))__
+* Detected time complexity: __O(N)__
 
-https://codility.com/demo/results/demo5TQXHV-U3B/
+https://codility.com/demo/results/demoJAH4VW-S4K/
