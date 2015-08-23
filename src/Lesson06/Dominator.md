@@ -2,34 +2,44 @@
 
 ### The Problem
 
-A string S consisting of N characters is considered to be properly nested if any of the following conditions is true:
+A zero-indexed array A consisting of N integers is given. The dominator of array A is the value that occurs in more than half of the elements of A.
 
-S is empty;
-* S has the form "(U)" or "[U]" or "{U}" where U is a properly nested string;
-* S has the form "VW" where V and W are properly nested strings.
-
-For example, the string "{[()()]}" is properly nested but "([)()]" is not.
-
-Write a function:
+For example, consider array A such that
 ```php
-function solution($S);
+A[0] = 3    A[1] = 4    A[2] =  3
+A[3] = 2    A[4] = 3    A[5] = -1
+A[6] = 3    A[7] = 3
 ```
-that, given a string S consisting of N characters, returns 1 if S is properly nested and 0 otherwise.
+The dominator of A is 3 because it occurs in 5 out of 8 elements of A (namely in those with indices 0, 2, 4, 6 and 7) and 5 is more than a half of 8.
 
-For example, given S = "{[()()]}", the function should return 1 and given S = "([)()]", the function should return 0, as explained above.
+Write a function
+```php
+function solution($A);
+```
+that, given a zero-indexed array A consisting of N integers, returns index of any element of array A in which the dominator of A occurs. The function should return −1 if array A does not have a dominator.
 
 ##### Assume that:
-* N is an integer within the range [0..200,000];
-* string S consists only of the following characters: "(", "{", "[", "]", "}" and/or ")".
+* N is an integer within the range [0..100,000];
+* each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
+
+For example, given array A such that
+```php
+A[0] = 3    A[1] = 4    A[2] =  3
+A[3] = 2    A[4] = 3    A[5] = -1
+A[6] = 3    A[7] = 3
+```
+the function may return 0, 2, 4, 6 or 7, as explained above.
 
 ##### Complexity:
 * expected worst-case time complexity is O(N);
-* expected worst-case space complexity is O(N) (not counting the storage required for input arguments).
+* expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+
+Elements of input arrays can be modified.
 
 ### Solution Analysis on Codility
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N)__
+* Detected time complexity: __O(N) or O(N*log(N))__
 
-https://codility.com/demo/results/demoK8V7RY-757/
+https://codility.com/demo/results/demo5TQXHV-U3B/
