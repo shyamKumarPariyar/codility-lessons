@@ -37,6 +37,6 @@ Elements of input arrays can be modified.
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N)__
+* Detected time complexity: __O(sqrt(N))__
 
-https://codility.com/demo/results/demoJAH4VW-S4K/
+https://codility.com/demo/results/demoC4RTKC-GVK/
