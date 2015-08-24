@@ -2,41 +2,29 @@
 
 ### The Problem
 
-A non-empty zero-indexed array A consisting of N integers is given. A pair of integers (P, Q), such that 0 ≤ P ≤ Q < N, is called a slice of array A. The sum of a slice (P, Q) is the total of A[P] + A[P+1] + ... + A[Q].
+A positive integer D is a factor of a positive integer N if there exists an integer M such that N = D * M.
+
+For example, 6 is a factor of 24, because M = 4 satisfies the above condition (24 = 6 * 4).
 
 Write a function:
 ```php
-    function solution($A);
+function solution($N);
 ```
-that, given an array A consisting of N integers, returns the maximum sum of any slice of A.
+that, given a positive integer N, returns the number of its factors.
 
-For example, given array A such that:
-```php
-    A[0] = 3    A[1] = 2    A[2] = -6
-    A[3] = 4    A[4] = 0
-```
-the function should return 5 because:
-
-* (3, 4) is a slice of A that has sum 4,
-* (2, 2) is a slice of A that has sum −6,
-* (0, 1) is a slice of A that has sum 5,
-* no other slice of A has sum greater than (0, 1).
+For example, given N = 24, the function should return 8, because 24 has 8 factors, namely 1, 2, 3, 4, 6, 8, 12, 24. There are no other factors of 24.
 
 ##### Assume that:
-* N is an integer within the range [1..1,000,000];
-* each element of array A is an integer within the range [−1,000,000..1,000,000];
-* the result will be an integer within the range [−2,147,483,648..2,147,483,647].
+* N is an integer within the range [1..2,147,483,647].
 
 ##### Complexity:
-* expected worst-case time complexity is O(N);
-* expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
-
-Elements of input arrays can be modified.
+* expected worst-case time complexity is O(sqrt(N));
+* expected worst-case space complexity is O(1).
 
 ### Solution Analysis on Codility
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
-* Detected time complexity: __O(N)__
+* Detected time complexity: __O(sqrt(N))__
 
-https://codility.com/demo/results/demoJAH4VW-S4K/
+https://codility.com/demo/results/demoAGCXY4-ZE3/

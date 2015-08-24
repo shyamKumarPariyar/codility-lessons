@@ -2,36 +2,33 @@
 
 ### The Problem
 
-A non-empty zero-indexed array A consisting of N integers is given. A pair of integers (P, Q), such that 0 ≤ P ≤ Q < N, is called a slice of array A. The sum of a slice (P, Q) is the total of A[P] + A[P+1] + ... + A[Q].
+An integer N is given, representing the area of some rectangle.
+
+The area of a rectangle whose sides are of length A and B is A * B, and the perimeter is 2 * (A + B).
+
+The goal is to find the minimal perimeter of any rectangle whose area equals N. The sides of this rectangle should be only integers.
+
+For example, given integer N = 30, rectangles of area 30 are:
+
+* (1, 30), with a perimeter of 62,
+* (2, 15), with a perimeter of 34,
+* (3, 10), with a perimeter of 26,
+* (5, 6), with a perimeter of 22.
 
 Write a function:
 ```php
-    function solution($A);
+function solution($N);
 ```
-that, given an array A consisting of N integers, returns the maximum sum of any slice of A.
+that, given an integer N, returns the minimal perimeter of any rectangle whose area is exactly equal to N.
 
-For example, given array A such that:
-```php
-    A[0] = 3    A[1] = 2    A[2] = -6
-    A[3] = 4    A[4] = 0
-```
-the function should return 5 because:
-
-* (3, 4) is a slice of A that has sum 4,
-* (2, 2) is a slice of A that has sum −6,
-* (0, 1) is a slice of A that has sum 5,
-* no other slice of A has sum greater than (0, 1).
+For example, given an integer N = 30, the function should return 22, as explained above.
 
 ##### Assume that:
-* N is an integer within the range [1..1,000,000];
-* each element of array A is an integer within the range [−1,000,000..1,000,000];
-* the result will be an integer within the range [−2,147,483,648..2,147,483,647].
+* N is an integer within the range [1..1,000,000,000].
 
 ##### Complexity:
-* expected worst-case time complexity is O(N);
-* expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
-
-Elements of input arrays can be modified.
+* expected worst-case time complexity is O(sqrt(N));
+* expected worst-case space complexity is O(1).
 
 ### Solution Analysis on Codility
 * Correctness: 100%
