@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/samiulhoque/codility-lessons.svg?branch=master)](https://travis-ci.org/samiulhoque/codility-lessons)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d/mini.png)](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d)
 
-All the [Codility](https://codility.com/programmers/lessons) lessons tried by me. I have used PHP for finding solution for the problems.
+All the [Codility](https://codility.com/programmers/lessons) lessons tried by me. I have used PHP for finding solution to the problems.
 
 - Total lessons: **16**
 - Total Problems: **50**
