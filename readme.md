@@ -4,31 +4,83 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d/mini.png)](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d)
 
 #### [Lesson 01 - Time Complexity](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson01/)
+- [x] TapeEquilibrium
+- [x] FrogJmp
+- [x] PermMissingElem
 
 #### [Lesson 02 - Counting Elements](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson02/)
+- [x] FrogRiverOne
+- [x] PermCheck
+- [x] MissingInteger
+- [x] MaxCounters
 
 #### [Lesson 03 - Prefix Sums](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson03/)
+- [x] CountDiv
+- [x] PassingCars
+- [x] MinAvgTwoSlice
+- [x] GenomicRangeQuery
 
 #### [Lesson 04 - Sorting](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson04/)
+- [x] MaxProductOfThree
+- [x] Triangle
+- [x] Distinct
+- [x] NumberOfDiscIntersections
 
 #### [Lesson 05 - Stacks and Queues](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson05/)
+- [x] Nesting
+- [x] StoneWall
+- [x] Brackets
+- [x] Fish
 
 #### [Lesson 06 - Leader](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson06/)
+- [x] Dominator
+- [x] EquiLeader
 
 #### [Lesson 07 - Maximum Slice Problem](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson07/)
+- [x] MaxDoubleSliceSum
+- [x] MaxProfit
+- [x] MaxSliceSum
 
 #### [Lesson 08 - Prime and Composite Numbers](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson08/)
+- [x] MinPerimeterRectangle
+- [x] CountFactors
+- [x] Peaks
+- [x] Flags
 
 #### [Lesson 09 - Sieve of Eratosthenes](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson09/)
+- [x] CountSemiprimes
+- [x] CountNonDivisible
 
 #### [Lesson 10 - Euclidean Algorithm](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson10/)
+- [ ] ChocolatesByNumbers
+- [ ] CommonPrimeDivisors
 
 #### [Lesson 11 - Fibonacci Numbers](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson11/)
+- [ ] Ladder
+- [ ] FibFrog
 
 #### [Lesson 12 - Binary Search Algorithm](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson12/)
+- [ ] MinMaxDivision
+- [ ] NailingPlanks
 
 #### [Lesson 13 - Caterpillar Method](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson13/)
+- [ ] AbsDistinct
+- [ ] CountDistinctSlices
+- [ ] CountTriangles
+- [ ] MinAbsSumOfTwo
 
 #### [Lesson 14 - Greedy Algorithms](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson14/)
+- [ ] MaxNonoverlappingSegments
+- [ ] TieRopes
 
 #### [Lesson 15 - Dynamic Programming](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson15/)
+- [ ] NumberSolitaire
+- [ ] MinAbsSum
+
+#### [Lesson 99 - Future Training](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson99/)
+- [ ] StrSymmetryPoint
+- [ ] TreeHeight
+- [ ] BinaryGap
+- [ ] OddOccurrencesInArray
+- [ ] ArrayInversionCount
+- [ ] PolygonConcavityIndex
