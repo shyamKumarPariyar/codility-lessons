@@ -80,6 +80,7 @@ Elements of input arrays can be modified.
 
 ### Solution Analysis on Codility
 > Note: Took help from https://github.com/acprimer/Codility/blob/master/src/Lesson8/Peaks.java
+
 * Correctness: 100%
 * Performance: 100%
 * Task score: 100%
