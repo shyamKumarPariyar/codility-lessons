@@ -3,6 +3,29 @@
 [![Build Status](https://travis-ci.org/samiulhoque/codility-lessons.svg?branch=master)](https://travis-ci.org/samiulhoque/codility-lessons)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d/mini.png)](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d)
 
+All the [Codility](https://codility.com/programmers/lessons) lessons tried by me. I have used PHP for finding solution for the problems.
+
+- Total lessons: **16**
+- Total Problems: **50**
+    - Painless: 33
+    - Respectable: 14
+    - Ambitious: 3
+- Completed: **30**
+    - Painless: 23
+    - Respectable: 7
+    - Ambitious: 0
+
+To use this code:
+- Clone this repository
+- run `composer update` in the project root directory
+- run `npm install` in the project root directory (if you want to automate testing using gulp)
+- All the solutions are on `src/` folder.
+- If you want to test the solutions, run `vendor/bin/phpspec run` in the project root directory
+
+**Note:** I welcome everyone to look in the code and if you can find better solution,
+please contribute it in the repo. I tried to implemented couple of test cases, so that
+the solution won't break.
+
 #### [Lesson 01 - Time Complexity](https://github.com/samiulhoque/codility-lessons/blob/master/src/Lesson01/)
 - [x] TapeEquilibrium
 - [x] FrogJmp
