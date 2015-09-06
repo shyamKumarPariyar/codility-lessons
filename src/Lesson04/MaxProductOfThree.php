@@ -6,34 +6,11 @@ class MaxProductOfThree
 {
     function solution($A)
     {
-        $N = count($A);
         sort($A);
+        $allPositives = $this->getPositives($A);
+        list($allNegatives, $twoNegatives) = $this->getNegatives($A, $allPositives);
 
-        $allPositives = [];
-        $allNegatives = [];
-        $twoNegatives = [];
-
-        for ($i = $N - 3; $i < $N; $i++) {
-            if ($A[$i] >= 0) {
-                $allPositives[] = $A[$i];
-            }
-        }
-
-        if (count($allPositives) === 0) {
-            for ($i = $N - 3; $i < $N; $i++) {
-                if ($A[$i] < 0) {
-                    $allNegatives[] = $A[$i];
-                }
-            }
-        } else {
-            for ($i = 0; $i < 2; $i++) {
-                if ($A[$i] < 0) {
-                    $twoNegatives[] = $A[$i];
-                }
-            }
-        }
-
-        $maxproduct = null;
+        $maxProduct = null;
         $values = array_merge($allPositives, $allNegatives, $twoNegatives);
         $count = count($values);
 
@@ -41,12 +18,61 @@ class MaxProductOfThree
             for ($j = $i + 1; $j < $count - 1; $j++) {
                 for ($k = $j + 1; $k < $count; $k++) {
                     $product = $values[$i] * $values[$j] * $values[$k];
-                    if(empty($maxproduct) || $product > $maxproduct)
-                        $maxproduct = $product;
+                    if (empty($maxProduct) || $product > $maxProduct) {
+                        $maxProduct = $product;
+                    }
                 }
             }
         }
 
-        return $maxproduct;
+        return $maxProduct;
+    }
+
+    /**
+     * @param $A
+     * @return array
+     * @internal param $arrayCount
+     * @internal param $allPositives
+     */
+    private function getPositives($A)
+    {
+        $arrayCount = count($A);
+        $allPositives = [];
+        for ($i = $arrayCount - 3; $i < $arrayCount; $i++) {
+            if ($A[$i] >= 0) {
+                $allPositives[] = $A[$i];
+            }
+        }
+        return $allPositives;
+    }
+
+    /**
+     * @param $A
+     * @param $allPositives
+     * @return array
+     * @internal param $arrayCount
+     * @internal param $allNegatives
+     * @internal param $twoNegatives
+     */
+    private function getNegatives($A, $allPositives)
+    {
+        $arrayCount = count($A);
+        $allNegatives = [];
+        $twoNegatives = [];
+        if (count($allPositives) === 0) {
+            for ($i = $arrayCount - 3; $i < $arrayCount; $i++) {
+                if ($A[$i] < 0) {
+                    $allNegatives[] = $A[$i];
+                }
+            }
+            return [$allNegatives, $twoNegatives];
+        } else {
+            for ($i = 0; $i < 2; $i++) {
+                if ($A[$i] < 0) {
+                    $twoNegatives[] = $A[$i];
+                }
+            }
+            return [$allNegatives, $twoNegatives];
+        }
     }
 }
