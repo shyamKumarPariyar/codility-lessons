@@ -36,10 +36,10 @@ class CountSemiprimes
         }
 
         ksort($semiPrimes);
-        $i = 1;
+        $incrementalValueToBeAssigned = 1;
         foreach ($semiPrimes as $value) {
-            $semiPrimes[$value] = $i;
-            $i++;
+            $semiPrimes[$value] = $incrementalValueToBeAssigned;
+            $incrementalValueToBeAssigned++;
         }
 
         $semiPrimesInRange = [];
