@@ -7,20 +7,8 @@ class CountSemiprimes
     function solution($N, $P, $Q)
     {
         $initialArrayCount = count($P);
-        $primes = [];
-        for ($i = 2; $i <= $N; $i++) {
-            $primes[$i] = $i;
-        }
+        $primes = array_values($this->filterPrimes($N, $this->getPrimes($N)));
 
-        $initialValue = 2;
-        while ($initialValue * $initialValue <= $N) {
-            for ($j = $initialValue + $initialValue; $j <= $N; $j += $initialValue) {
-                unset($primes[$j]);
-            }
-            $initialValue++;
-        }
-
-        $primes = array_values($primes);
         $semiPrimes = [];
         $primeCount = count($primes);
 
@@ -82,5 +70,35 @@ class CountSemiprimes
             }
         }
         return $semiPrimesInRange;
+    }
+
+    /**
+     * @param $N
+     * @return array
+     */
+    private function getPrimes($N)
+    {
+        $primes = [];
+        for ($i = 2; $i <= $N; $i++) {
+            $primes[$i] = $i;
+        }
+        return $primes;
+    }
+
+    /**
+     * @param $N
+     * @param $primes
+     * @return int
+     */
+    private function filterPrimes($N, $primes)
+    {
+        $initialValue = 2;
+        while ($initialValue * $initialValue <= $N) {
+            for ($j = $initialValue + $initialValue; $j <= $N; $j += $initialValue) {
+                unset($primes[$j]);
+            }
+            $initialValue++;
+        }
+        return $primes;
     }
 }
