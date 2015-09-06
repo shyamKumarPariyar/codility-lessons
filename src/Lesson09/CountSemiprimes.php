@@ -6,18 +6,18 @@ class CountSemiprimes
 {
     function solution($N, $P, $Q)
     {
-        $M = count($P);
+        $initialArrayCount = count($P);
         $primes = [];
         for ($i = 2; $i <= $N; $i++) {
             $primes[$i] = $i;
         }
 
-        $i = 2;
-        while ($i * $i <= $N) {
-            for ($j = $i + $i; $j <= $N; $j += $i) {
+        $initialValue = 2;
+        while ($initialValue * $initialValue <= $N) {
+            for ($j = $initialValue + $initialValue; $j <= $N; $j += $initialValue) {
                 unset($primes[$j]);
             }
-            $i++;
+            $initialValue++;
         }
 
         $primes = array_values($primes);
@@ -44,30 +44,30 @@ class CountSemiprimes
 
         $semiPrimesInRange = [];
 
-        for ($i = 0; $i < $M; $i++) {
+        for ($i = 0; $i < $initialArrayCount; $i++) {
             $leftKey = null;
             $rightKey = null;
-            $p = $P[$i];
-            $q = $Q[$i];
-            $range = $q - $p;
+            $pValue = $P[$i];
+            $qValue = $Q[$i];
+            $range = $qValue - $pValue;
 
-            if (array_key_exists($p, $semiPrimes)) {
-                $leftKey = $p;
+            if (array_key_exists($pValue, $semiPrimes)) {
+                $leftKey = $pValue;
             } else {
                 for ($j = 1; $j <= $range; $j++) {
-                    if (array_key_exists($p + $j, $semiPrimes)) {
-                        $leftKey = $p + $j;
+                    if (array_key_exists($pValue + $j, $semiPrimes)) {
+                        $leftKey = $pValue + $j;
                         break;
                     }
                 }
             }
 
-            if (array_key_exists($q, $semiPrimes)) {
-                $rightKey = $q;
+            if (array_key_exists($qValue, $semiPrimes)) {
+                $rightKey = $qValue;
             } else {
                 for ($j = 1; $j <= $range; $j++) {
-                    if (array_key_exists($q - $j, $semiPrimes)) {
-                        $rightKey = $q - $j;
+                    if (array_key_exists($qValue - $j, $semiPrimes)) {
+                        $rightKey = $qValue - $j;
                         break;
                     }
                 }
