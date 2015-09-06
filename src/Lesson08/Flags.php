@@ -7,22 +7,16 @@ class Flags
 
     function solution($A)
     {
-        $N = count($A);
+        $arrayCount = count($A);
         $peaks = [];
-        for ($i = 1; $i < $N - 1; $i++) {
+        for ($i = 1; $i < $arrayCount - 1; $i++) {
             if ($A[$i] > $A[$i - 1] && $A[$i] > $A[$i + 1]) {
                 $peaks[] = $i;
             }
         }
         $numberOfPeaks = count($peaks);
 
-        $a = 1;
-        $b = -1;
-        $c = -($N - 1);
-        $d = $b * $b - 4 * $a * $c;
-        $x1 = (-$b + sqrt($d)) / (2 * $a);
-        $x2 = (-$b - sqrt($d)) / (2 * $a);
-        $maxFlags = min($numberOfPeaks, max($x1, $x2));
+        $maxFlags = $this->getMaxFlags($arrayCount, $numberOfPeaks);
 
         for ($flags = intval($maxFlags); $flags > 0; $flags--) {
             $remainingFlags = $flags;
@@ -40,5 +34,22 @@ class Flags
             }
         }
         return 0;
+    }
+
+    /**
+     * @param $arrayCount
+     * @param $numberOfPeaks
+     * @return mixed
+     */
+    private function getMaxFlags($arrayCount, $numberOfPeaks)
+    {
+        $quadraticCoefficient = 1;
+        $linearCoefficient = -1;
+        $constant = -($arrayCount - 1);
+        $numerator = $linearCoefficient * $linearCoefficient - 4 * $quadraticCoefficient * $constant;
+        $firstX = (-$linearCoefficient + sqrt($numerator)) / (2 * $quadraticCoefficient);
+        $secondX = (-$linearCoefficient - sqrt($numerator)) / (2 * $quadraticCoefficient);
+        $maxFlags = min($numberOfPeaks, max($firstX, $secondX));
+        return $maxFlags;
     }
 }
