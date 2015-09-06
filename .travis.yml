@@ -10,3 +10,6 @@ before_script:
   - composer install --prefer-source
 script:
   - vendor/bin/phpspec run -v
+addons:
+    code_climate:
+        repo_token: 94aa8e304bbd9d5485ff6a6658070477c35928fc180ab05c740fe71036394bd7
