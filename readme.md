@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/samiulhoque/codility-lessons.svg?branch=master)](https://travis-ci.org/samiulhoque/codility-lessons)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d/mini.png)](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d)
+[![Code Climate](https://codeclimate.com/repos/55ec9b77e30ba04082013dcd/badges/800667b0171c98b44232/gpa.svg)](https://codeclimate.com/repos/55ec9b77e30ba04082013dcd/feed)
+[![Test Coverage](https://codeclimate.com/repos/55ec9b77e30ba04082013dcd/badges/800667b0171c98b44232/coverage.svg)](https://codeclimate.com/repos/55ec9b77e30ba04082013dcd/coverage)
 
 All the [Codility](https://codility.com/programmers/lessons) lessons tried by me. I have used PHP for finding solution to the problems.
 
