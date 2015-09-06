@@ -4,7 +4,8 @@
     "keywords": ["codility", "learning", "php"],
     "license": "MIT",
     "require": {
-        "phpspec/phpspec": "~2.0"
+        "phpspec/phpspec": "~2.0",
+        "phpmd/phpmd": "^2.2"
     },
     "require-dev": {
         "codeclimate/php-test-reporter": "dev-master"
