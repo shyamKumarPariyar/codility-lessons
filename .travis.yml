@@ -13,3 +13,6 @@ script:
 addons:
     code_climate:
         repo_token: 94aa8e304bbd9d5485ff6a6658070477c35928fc180ab05c740fe71036394bd7
+notifications:
+  slack: samiul:6a9KzXbsycCdfzz2UAno7UTC
+  
