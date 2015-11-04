@@ -4,8 +4,7 @@ namespace Lesson03;
 
 class MinAvgTwoSlice
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $position = 0;
         $count = count($A);

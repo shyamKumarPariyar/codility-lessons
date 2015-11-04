@@ -4,8 +4,7 @@ namespace Lesson08;
 
 class Peaks
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         if ($N <= 2) {
@@ -30,6 +29,7 @@ class Peaks
                     return false;
                 }
             }
+
             return true;
         };
 

@@ -4,7 +4,7 @@ namespace Lesson09;
 
 class CountSemiprimes
 {
-    function solution($N, $P, $Q)
+    public function solution($N, $P, $Q)
     {
         $initialArrayCount = count($P);
         $primes = array_values($this->filterPrimes($N, $this->getPrimes($N)));
@@ -36,11 +36,13 @@ class CountSemiprimes
                 $semiPrimesInRange[$i] = $semiPrimes[$rightKey] - $semiPrimes[$leftKey] + 1;
             }
         }
+
         return $semiPrimesInRange;
     }
 
     /**
      * @param $N
+     *
      * @return array
      */
     private function getPrimes($N)
@@ -49,12 +51,14 @@ class CountSemiprimes
         for ($i = 2; $i <= $N; $i++) {
             $primes[$i] = $i;
         }
+
         return $primes;
     }
 
     /**
      * @param $N
      * @param $primes
+     *
      * @return int
      */
     private function filterPrimes($N, $primes)
@@ -66,6 +70,7 @@ class CountSemiprimes
             }
             $initialValue++;
         }
+
         return $primes;
     }
 
@@ -73,7 +78,9 @@ class CountSemiprimes
      * @param $N
      * @param $primeCount
      * @param $primes
+     *
      * @return array
+     *
      * @internal param $semiPrimes
      */
     private function getSemiPrimes($N, $primeCount, $primes)
@@ -89,6 +96,7 @@ class CountSemiprimes
                 }
             }
         }
+
         return $semiPrimes;
     }
 
@@ -96,6 +104,7 @@ class CountSemiprimes
      * @param $value
      * @param $semiPrimes
      * @param $range
+     *
      * @return key
      */
     private function getKey($value, $semiPrimes, $range)
@@ -111,6 +120,7 @@ class CountSemiprimes
                 }
             }
         }
+
         return $key;
     }
 }

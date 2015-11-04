@@ -4,8 +4,7 @@ namespace Lesson05;
 
 class Fish
 {
-
-    function solution($A, $B)
+    public function solution($A, $B)
     {
         $N = count($A);
         $stack = [];
@@ -29,6 +28,7 @@ class Fish
                 array_push($stack, [$size, $direction]);
             }
         }
+
         return count($stack);
     }
 }

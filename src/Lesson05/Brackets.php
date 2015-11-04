@@ -4,8 +4,7 @@ namespace Lesson05;
 
 class Brackets
 {
-
-    function solution($S)
+    public function solution($S)
     {
         $length = strlen($S);
         $map = [')' => '(', '}' => '{', ']' => '['];

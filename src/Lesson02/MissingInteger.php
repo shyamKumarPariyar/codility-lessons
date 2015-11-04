@@ -4,8 +4,7 @@ namespace Lesson02;
 
 class MissingInteger
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $uniquePositives = array_unique(array_filter($A, function ($number) {
             return $number > 0;
@@ -21,7 +20,7 @@ class MissingInteger
 
             $sortedUniques = array_values($uniquePositives);
             $sortedUniquesCount = count($sortedUniques);
-            
+
             for ($i = 0; $i < $sortedUniquesCount; $i++) {
                 if ($sortedUniques[$i] > ($i + 1)) {
                     $missingNumber = $i + 1;
@@ -33,6 +32,7 @@ class MissingInteger
                 $missingNumber = $i + 1;
             }
         }
+
         return $missingNumber;
     }
 }

@@ -4,8 +4,7 @@ namespace Lesson06;
 
 class EquiLeader
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         if ($N > 1) {
@@ -14,7 +13,7 @@ class EquiLeader
             $max = 0;
             $maxValue = 0;
             foreach ($count as $key => $value) {
-                if ($value > (int)($N / 2)) {
+                if ($value > (int) ($N / 2)) {
                     $max = $key;
                     $maxValue = $value;
                     break;
@@ -32,8 +31,10 @@ class EquiLeader
                     $equiCounter++;
                 }
             }
+
             return $equiCounter;
         }
+
         return 0;
     }
 }

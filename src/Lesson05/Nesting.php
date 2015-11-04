@@ -4,8 +4,7 @@ namespace Lesson05;
 
 class Nesting
 {
-
-    function solution($S)
+    public function solution($S)
     {
         $length = strlen($S);
         if ($length) {

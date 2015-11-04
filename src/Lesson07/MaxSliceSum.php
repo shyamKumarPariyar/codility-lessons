@@ -4,8 +4,7 @@ namespace Lesson07;
 
 class MaxSliceSum
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         $maxSum = $A[0];
@@ -14,6 +13,7 @@ class MaxSliceSum
             $maxSumAfter = max($A[$i], $maxSumAfter + $A[$i]);
             $maxSum = max($maxSum, $maxSumAfter);
         }
+
         return $maxSum;
     }
 }
