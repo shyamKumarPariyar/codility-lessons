@@ -4,10 +4,9 @@ namespace Lesson08;
 
 class MinPerimeterRectangle
 {
-
-    function solution($N)
+    public function solution($N)
     {
-        $root = (int)ceil(sqrt($N));
+        $root = (int) ceil(sqrt($N));
         $min = PHP_INT_MAX;
         for ($i = 1; $i <= $root; $i++) {
             if ($N % $i === 0) {
@@ -17,6 +16,7 @@ class MinPerimeterRectangle
                 }
             }
         }
+
         return 2 * $min;
     }
 }

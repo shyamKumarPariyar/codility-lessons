@@ -4,10 +4,9 @@ namespace Lesson08;
 
 class CountFactors
 {
-
-    function solution($N)
+    public function solution($N)
     {
-        $root = (int)ceil(sqrt($N));
+        $root = (int) ceil(sqrt($N));
         $numberOfFactors = [];
         for ($i = 1; $i <= $root; $i++) {
             if ($N % $i === 0) {
@@ -16,6 +15,7 @@ class CountFactors
                 $numberOfFactors[] = $j;
             }
         }
+
         return count(array_unique($numberOfFactors));
     }
 }

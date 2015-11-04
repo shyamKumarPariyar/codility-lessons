@@ -4,8 +4,7 @@ namespace Lesson09;
 
 class CountNonDivisible
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         $countValues = array_count_values($A);
@@ -29,6 +28,7 @@ class CountNonDivisible
         for ($i = 0; $i < $N; $i++) {
             $result[$i] = $N + $answer[$A[$i]];
         }
+
         return $result;
     }
 }

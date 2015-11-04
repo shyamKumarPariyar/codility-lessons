@@ -4,8 +4,7 @@ namespace Lesson03;
 
 class PassingCars
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $count = count($A);
         $sum = 0;
@@ -22,6 +21,7 @@ class PassingCars
                 break;
             }
         }
+
         return $total;
     }
 }

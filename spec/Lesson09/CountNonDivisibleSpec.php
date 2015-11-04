@@ -3,18 +3,17 @@
 namespace spec\Lesson09;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class CountNonDivisibleSpec extends ObjectBehavior
 {
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('Lesson09\CountNonDivisible');
     }
 
-    function it_should_return_2_4_3_2_0_for_3_1_2_3_6()
+    public function it_should_return_2_4_3_2_0_for_3_1_2_3_6()
     {
-//        $rustart = getrusage();
+        //        $rustart = getrusage();
         $this->solution([3, 1, 2, 3, 6])->shouldReturn([2, 4, 3, 2, 0]);
 //        $ru = getrusage();
 //        echo "\nThis process used " . self::rutime($ru, $rustart, "utime") .
@@ -45,7 +44,7 @@ class CountNonDivisibleSpec extends ObjectBehavior
 //        $temp->shouldReturn($output);
 //    }
 
-    function rutime($ru, $rus, $index)
+    public function rutime($ru, $rus, $index)
     {
         return ($ru["ru_$index.tv_sec"] * 1000 + intval($ru["ru_$index.tv_usec"] / 1000))
         - ($rus["ru_$index.tv_sec"] * 1000 + intval($rus["ru_$index.tv_usec"] / 1000));

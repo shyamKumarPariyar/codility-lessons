@@ -4,8 +4,7 @@ namespace Lesson08;
 
 class Flags
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $arrayCount = count($A);
         $peaks = [];
@@ -33,12 +32,14 @@ class Flags
                 return $flags;
             }
         }
+
         return 0;
     }
 
     /**
      * @param $arrayCount
      * @param $numberOfPeaks
+     *
      * @return mixed
      */
     private function getMaxFlags($arrayCount, $numberOfPeaks)
@@ -50,6 +51,7 @@ class Flags
         $firstX = (-$linearCoefficient + sqrt($numerator)) / (2 * $quadraticCoefficient);
         $secondX = (-$linearCoefficient - sqrt($numerator)) / (2 * $quadraticCoefficient);
         $maxFlags = min($numberOfPeaks, max($firstX, $secondX));
+
         return $maxFlags;
     }
 }

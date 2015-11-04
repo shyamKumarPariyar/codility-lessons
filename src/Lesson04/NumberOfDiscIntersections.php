@@ -4,8 +4,7 @@ namespace Lesson04;
 
 class NumberOfDiscIntersections
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         $numberOfIntersectingDiscs = 0;
@@ -33,6 +32,7 @@ class NumberOfDiscIntersections
             }
             $discsAtCurrentPosition -= $numberOfDiscsEndedAt[$i];
         }
+
         return $numberOfIntersectingDiscs;
     }
 }

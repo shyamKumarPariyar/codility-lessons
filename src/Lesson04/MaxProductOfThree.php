@@ -4,7 +4,7 @@ namespace Lesson04;
 
 class MaxProductOfThree
 {
-    function solution($A)
+    public function solution($A)
     {
         sort($A);
         $allPositives = $this->getPositives($A);
@@ -30,7 +30,9 @@ class MaxProductOfThree
 
     /**
      * @param $A
+     *
      * @return array
+     *
      * @internal param $arrayCount
      * @internal param $allPositives
      */
@@ -43,13 +45,16 @@ class MaxProductOfThree
                 $allPositives[] = $A[$i];
             }
         }
+
         return $allPositives;
     }
 
     /**
      * @param $A
      * @param $allPositives
+     *
      * @return array
+     *
      * @internal param $arrayCount
      * @internal param $allNegatives
      * @internal param $twoNegatives
@@ -65,6 +70,7 @@ class MaxProductOfThree
                     $allNegatives[] = $A[$i];
                 }
             }
+
             return [$allNegatives, $twoNegatives];
         } else {
             for ($i = 0; $i < 2; $i++) {
@@ -72,6 +78,7 @@ class MaxProductOfThree
                     $twoNegatives[] = $A[$i];
                 }
             }
+
             return [$allNegatives, $twoNegatives];
         }
     }

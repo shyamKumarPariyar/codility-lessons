@@ -4,9 +4,9 @@ namespace Lesson04;
 
 class Distinct
 {
-    function solution($A)
+    public function solution($A)
     {
-        /**
+        /*
          * Long Solution:
          *
          * sort($A);
@@ -25,7 +25,7 @@ class Distinct
          * return $unique;
          */
 
-        /**
+        /*
          * Shortest Solution:
          */
         return count(array_unique($A));

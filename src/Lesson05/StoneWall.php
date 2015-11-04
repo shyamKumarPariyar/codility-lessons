@@ -4,8 +4,7 @@ namespace Lesson05;
 
 class StoneWall
 {
-
-    function solution($H)
+    public function solution($H)
     {
         $N = count($H);
         $blocks = 0;
@@ -16,7 +15,6 @@ class StoneWall
                 $stack_position--;
             }
             if ($stack_position > 0 && $stack[$stack_position - 1] == $H[$i]) {
-
             } else {
                 $blocks++;
                 $stack[$stack_position] = $H[$i];

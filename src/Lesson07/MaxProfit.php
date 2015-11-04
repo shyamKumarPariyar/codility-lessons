@@ -4,8 +4,7 @@ namespace Lesson07;
 
 class MaxProfit
 {
-
-    function solution($A)
+    public function solution($A)
     {
         $N = count($A);
         $maxProfit = 0;
@@ -21,6 +20,7 @@ class MaxProfit
                 }
             }
         }
+
         return $maxProfit;
     }
 }
