@@ -4,7 +4,7 @@ namespace Lesson04;
 
 class NumberOfDiscIntersections
 {
-    public function solution($A)
+    public function solution ($A)
     {
         $N = count($A);
         $numberOfIntersectingDiscs = 0;

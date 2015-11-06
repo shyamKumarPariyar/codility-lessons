@@ -4,7 +4,7 @@ namespace Lesson05;
 
 class Fish
 {
-    public function solution($A, $B)
+    public function solution ($A, $B)
     {
         $N = count($A);
         $stack = [];

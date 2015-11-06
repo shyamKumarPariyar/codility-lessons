@@ -4,7 +4,7 @@ namespace Lesson01;
 
 class PermMissingElem
 {
-    public function solution($A)
+    public function solution ($A)
     {
         $missing = 1;
         $count = count($A);

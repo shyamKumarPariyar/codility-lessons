@@ -4,7 +4,7 @@ namespace Lesson05;
 
 class StoneWall
 {
-    public function solution($H)
+    public function solution ($H)
     {
         $N = count($H);
         $blocks = 0;

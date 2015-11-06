@@ -4,7 +4,7 @@ namespace Lesson04;
 
 class Distinct
 {
-    public function solution($A)
+    public function solution ($A)
     {
         /*
          * Long Solution:

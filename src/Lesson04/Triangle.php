@@ -4,7 +4,7 @@ namespace Lesson04;
 
 class Triangle
 {
-    public function solution($A)
+    public function solution ($A)
     {
         $count = count($A);
         sort($A);

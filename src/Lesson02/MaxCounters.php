@@ -4,7 +4,7 @@ namespace Lesson02;
 
 class MaxCounters
 {
-    public function solution($N, $A)
+    public function solution ($N, $A)
     {
         $output = array_fill(0, $N, 0);
         $count = count($A);

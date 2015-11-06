@@ -4,7 +4,7 @@ namespace Lesson02;
 
 class PermCheck
 {
-    public function solution($A)
+    public function solution ($A)
     {
         $countValues = array_count_values($A);
         if (max($A) == count($countValues)) {

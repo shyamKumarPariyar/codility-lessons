@@ -4,7 +4,7 @@ namespace Lesson03;
 
 class GenomicRangeQuery
 {
-    public function solution($S, $P, $Q)
+    public function solution ($S, $P, $Q)
     {
         $queries = count($P);
         $output = [];

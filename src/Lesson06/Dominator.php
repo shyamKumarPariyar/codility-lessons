@@ -4,7 +4,7 @@ namespace Lesson06;
 
 class Dominator
 {
-    public function solution($A)
+    public function solution ($A)
     {
         $N = count($A);
         if ($N) {

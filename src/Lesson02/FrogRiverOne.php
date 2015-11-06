@@ -4,7 +4,7 @@ namespace Lesson02;
 
 class FrogRiverOne
 {
-    public function solution($X, $A)
+    public function solution ($X, $A)
     {
         $minimumTime = -1;
         $uniques = array_unique($A);

@@ -4,9 +4,9 @@ namespace Lesson02;
 
 class MissingInteger
 {
-    public function solution($A)
+    public function solution ($A)
     {
-        $uniquePositives = array_unique(array_filter($A, function ($number) {
+        $uniquePositives = array_unique(array_filter($A, function($number) {
             return $number > 0;
         }));
 
