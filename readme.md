@@ -22,7 +22,7 @@ To use this code:
 - Clone this repository
 - run `composer update` in the project root directory
 - run `npm install` in the project root directory (if you want to automate testing using `gulp`)
-  - if using `gulp`: run `gulp` from the project root and whenever you edit code, all tests will run
+  - if using gulp: run `gulp` from the project root and whenever you edit code, all tests will run
 - All the solutions are on `src/` folder.
 - If you want to test the solutions, run `vendor/bin/phpspec run` in the project root directory
 
