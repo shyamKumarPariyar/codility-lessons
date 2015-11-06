@@ -14,8 +14,7 @@ class StoneWall
             while ($stack_position > 0 && $stack[$stack_position - 1] > $H[$i]) {
                 $stack_position--;
             }
-            if ($stack_position > 0 && $stack[$stack_position - 1] == $H[$i]) {
-            } else {
+            if (!($stack_position > 0 && $stack[$stack_position - 1] == $H[$i])) {
                 $blocks++;
                 $stack[$stack_position] = $H[$i];
                 $stack_position++;
