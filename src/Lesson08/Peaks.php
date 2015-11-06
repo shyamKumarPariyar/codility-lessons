@@ -19,7 +19,7 @@ class Peaks
         }
         $sum[$N - 1] = $sum[$N - 2];
 
-        $func = function ($sum = [], $m) {
+        $func = function($sum = [], $m) {
             if ($sum[$m - 1] <= 0) {
                 return false;
             }
