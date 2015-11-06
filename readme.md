@@ -4,7 +4,7 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d/mini.png)](https://insight.sensiolabs.com/projects/65f45405-d802-47ae-a7c2-7ba39008359d)
 [![StyleCI](https://styleci.io/repos/40940581/shield)](https://styleci.io/repos/40940581)
 [![Code Climate](https://codeclimate.com/github/samiulhoque/codility-lessons/badges/gpa.svg)](https://codeclimate.com/github/samiulhoque/codility-lessons)
-[![Test Coverage](https://codeclimate.com/github/samiulhoque/codility-lessons/badges/coverage.svg)](https://codeclimate.com/github/samiulhoque/codility-lessons/coverage)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/samiulhoque/codility-lessons/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/samiulhoque/codility-lessons/?branch=master)
 
 All the [Codility](https://codility.com/programmers/lessons) lessons tried by me. I have used PHP for finding solution to the problems.
 
