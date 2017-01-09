@@ -23,11 +23,11 @@ class PermMissingElemSpec extends ObjectBehavior
 
     public function it_should_return_5_for_1_2_3_4()
     {
-        $this->solution([1,2,3,4])->shouldReturn(5);
+        $this->solution([1, 2, 3, 4])->shouldReturn(5);
     }
 
     public function it_should_return_1_for_2_3_4()
     {
-        $this->solution([2,3,4])->shouldReturn(1);
+        $this->solution([2, 3, 4])->shouldReturn(1);
     }
 }
