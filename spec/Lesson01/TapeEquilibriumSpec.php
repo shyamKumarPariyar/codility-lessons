@@ -8,7 +8,7 @@ class TapeEquilibriumSpec extends ObjectBehavior
 {
     public function it_should_return_1_for_1_2()
     {
-        $this->solution([1,2])->shouldReturn(1);
+        $this->solution([1, 2])->shouldReturn(1);
     }
 
     public function it_should_return_1_for_3_1_2_4_3()
@@ -18,6 +18,6 @@ class TapeEquilibriumSpec extends ObjectBehavior
 
     public function it_should_return_1_for_neg1_neg2_neg3_neg4()
     {
-        $this->solution([-1,-2,-3,-4])->shouldReturn(2);
+        $this->solution([-1, -2, -3, -4])->shouldReturn(2);
     }
 }

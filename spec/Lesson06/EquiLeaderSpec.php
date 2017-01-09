@@ -18,6 +18,6 @@ class EquiLeaderSpec extends ObjectBehavior
 
     public function it_should_return_2_for_434442()
     {
-        $this->solution([4,3,4,4,4,2])->shouldReturn(2);
+        $this->solution([4, 3, 4, 4, 4, 2])->shouldReturn(2);
     }
 }
